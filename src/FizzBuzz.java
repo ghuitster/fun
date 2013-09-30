@@ -1,4 +1,3 @@
-
 public class FizzBuzz
 {
 	/*This is an old drinking game! It will print out Fizz when the number is a multiple of 3,
@@ -6,16 +5,13 @@ public class FizzBuzz
 	public static void main (String[] args)
 	{
 		final int MAX=100;
-		for(int i=1; i-1<MAX; i++)
+		for(int i=1; i<=MAX; i++)
 		{
-			String printMe="";
 			if(i%3==0)
-				printMe="Fizz";
+				System.out.print("Fizz");
 			if(i%5==0)
-				printMe+="Buzz";
-			if(printMe.equals(""))
-				printMe+=i;
-			System.out.println(printMe);
+				System.out.print("Buzz");
+			System.out.println();
 		}
 	}
 }
